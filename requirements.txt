@@ -1,2 +1,2 @@
-inflect
+inflect==7.4.0
 reynir==2.10.1

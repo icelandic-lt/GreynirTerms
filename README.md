@@ -1,11 +1,32 @@
+# GreynirTerms
+
+![Version](https://img.shields.io/badge/main-darkgreen)
+![Python](https://img.shields.io/badge/python-3.9-blue?logo=python&logoColor=white)
+![CI Status](https://img.shields.io/badge/CI-[unavailable]-red)
+![Docker](https://img.shields.io/badge/Docker-[unavailable]-red)
 
 <img src="static/greynir-logo-large.png" alt="Greynir" width="200" height="200" align="right" style="margin-left:20px; margin-bottom: 20px;">
-
-# GreynirTerms
 
 *GreynirTerms* is a utility program for generating synthetic parallel corpora
 of English and Icelandic sentences that contain rare terms. These rare terms
 are typically specialized vocabularies or glossaries for particular topic domains.
+
+## Status
+![Development/Experimental](https://img.shields.io/badge/Experimental-darkviolet)
+
+This tool is experimental.
+
+## Overview
+
+- **Category:** [MT](https://github.com/icelandic-lt/icelandic-lt/blob/main/doc/mt.md)
+- **Domain:** Server/Workstation
+- **Languages:** Python
+- **Language Version/Dialect:**
+  - Python: 3.9+
+- **Audience**: Developers, Researchers
+- **Origins:** [GreynirTerms](https://github.com/mideind/GreynirTerms),
+
+## Description
 
 GreynirTerms is used to help Neural Machine Translation (NMT) networks
 learn vocabulary that occurs relatively infrequently in authentic parallel corpora.
@@ -36,6 +57,8 @@ The second parameter is the output (template) file; if left out, the output is w
 
 The `--glossary` parameter identifies a glossary file containing translations
 of common nouns. Its format is explained below.
+
+Please note, that generation of the template file is very slow.
 
 ## Generating a synthetic corpus (phase 2)
 
@@ -135,8 +158,6 @@ This software is licensed under the **MIT License**:
    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
-
-<img src="https://github.com/mideind/GreynirPackage/blob/master/doc/_static/MideindLogoVert100.png?raw=true" align="right" style="margin-left:20px;" alt="Miðeind ehf.">
 
 If you would like to use this software in ways that are incompatible
 with the standard MIT license, [contact Miðeind ehf.](mailto:mideind@mideind.is)
